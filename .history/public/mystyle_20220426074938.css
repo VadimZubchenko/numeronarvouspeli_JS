@@ -1,0 +1,20 @@
+body {
+  background-color: lightblue;
+}
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+input {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}

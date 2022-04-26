@@ -1,0 +1,32 @@
+
+
+
+div{
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  border: 3px solid green;
+  background-color: lightblue;
+}
+input {
+  height: 20px;
+  width: 100px;
+  color: black;
+  text-align: center;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button {
+
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}

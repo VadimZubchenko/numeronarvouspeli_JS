@@ -1,0 +1,25 @@
+
+
+
+div{
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  border: 3px solid green;
+  background-color: lightblue;
+}
+input {
+  height: 20px;
+  width: 50px;
+  color: black;
+  text-align: center;
+  position: absolute;
+  
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}

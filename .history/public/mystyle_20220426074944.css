@@ -1,0 +1,16 @@
+body {
+  background-color: lightblue;
+}
+
+
+input {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}

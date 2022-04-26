@@ -1,0 +1,20 @@
+
+
+
+div{
+  height: 300px;
+  position: relative;
+  border: 3px solid green;
+  background-color: lightblue;
+}
+input {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
