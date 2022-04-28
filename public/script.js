@@ -18,9 +18,6 @@ if (firstStart) {
 function msg(element, text) {
   document.getElementById(element).innerHTML = text;
 }
-function maara(text) {
-  document.getElementById("maara").innerHTML = text;
-}
 
 function startGame() {
   let text = document.getElementById("message");
@@ -41,16 +38,14 @@ function startGame() {
         "Valitse luku suurempi kuin: " + clientArvo + ". <br>Yritä uudelleen!"
       );
       kpl++;
-    }
-    if (clientArvo > arvo) {
+    } else if (clientArvo > arvo) {
       lastMax = clientArvo;
       msg(
         "message",
         "Valitse luku pienempi kuin: " + clientArvo + ". <br>Yritä uudelleen!"
       );
       kpl++;
-    }
-    if (clientArvo == arvo) {
+    } else {
       msg("message", "Arvosit oikein! " + clientArvo + ".");
       text.style.color = "red";
       document.body.style.backgroundColor = "yellow";
