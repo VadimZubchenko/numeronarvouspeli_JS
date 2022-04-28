@@ -67,7 +67,7 @@ function startGame() {
     text.style.color = "red";
     document.body.style.backgroundColor = "pink";
   }
-  msg("maara", "Arvausten määrä: " + kpl);
+  msg("message", "Arvausten määrä: " + kpl);
   console.log("min:" + lastMin);
   console.log("max: :" + lastMax);
 }

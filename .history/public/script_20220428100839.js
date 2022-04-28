@@ -31,7 +31,7 @@ function startGame() {
   let checkNaN = isNaN(clientArvo);
 
   console.log("clientArvo: " + clientArvo);
-  console.log("syötetty ei ole luku: " + checkNaN);
+  console.log("ei ole numero: " + checkNaN);
 
   if (lastMin < clientArvo && clientArvo < lastMax && !checkNaN) {
     if (clientArvo < arvo) {
@@ -57,7 +57,6 @@ function startGame() {
     }
   } else {
     msg(
-      "message",
       "Ups! Jotain meni pielen.<br><br> Syötä numerollinen arvo. <br> " +
         lastMin +
         " ja " +
@@ -67,7 +66,7 @@ function startGame() {
     text.style.color = "red";
     document.body.style.backgroundColor = "pink";
   }
-  msg("maara", "Arvausten määrä: " + kpl);
+  maara("Arvausten määrä: " + kpl);
   console.log("min:" + lastMin);
   console.log("max: :" + lastMax);
 }
@@ -82,7 +81,7 @@ function resetGame() {
   message = document.getElementById("message");
   message.style.color = "";
 
-  msg("maara", "Arvausten määrä: " + kpl);
-  msg("message", "Arva numero 1-100 väliltä");
+  maara("Arvausten määrä: " + kpl);
+  msg("Arva numero 1-100 väliltä");
   arvoLask();
 }

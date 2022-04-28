@@ -15,8 +15,8 @@ if (firstStart) {
   firstStart = false;
 }
 
-function msg(element, text) {
-  document.getElementById(element).innerHTML = text;
+function msg(text) {
+  document.getElementById("message").innerHTML = text;
 }
 function maara(text) {
   document.getElementById("maara").innerHTML = text;
@@ -31,13 +31,12 @@ function startGame() {
   let checkNaN = isNaN(clientArvo);
 
   console.log("clientArvo: " + clientArvo);
-  console.log("syötetty ei ole luku: " + checkNaN);
+  console.log("ei ole numero: " + checkNaN);
 
   if (lastMin < clientArvo && clientArvo < lastMax && !checkNaN) {
     if (clientArvo < arvo) {
       lastMin = clientArvo;
       msg(
-        "message",
         "Valitse luku suurempi kuin: " + clientArvo + ". <br>Yritä uudelleen!"
       );
       kpl++;
@@ -45,19 +44,17 @@ function startGame() {
     if (clientArvo > arvo) {
       lastMax = clientArvo;
       msg(
-        "message",
         "Valitse luku pienempi kuin: " + clientArvo + ". <br>Yritä uudelleen!"
       );
       kpl++;
     }
     if (clientArvo == arvo) {
-      msg("message", "Arvosit oikein! " + clientArvo + ".");
+      msg("Arvosit oikein! " + clientArvo + ".");
       text.style.color = "red";
       document.body.style.backgroundColor = "yellow";
     }
   } else {
     msg(
-      "message",
       "Ups! Jotain meni pielen.<br><br> Syötä numerollinen arvo. <br> " +
         lastMin +
         " ja " +
@@ -67,7 +64,7 @@ function startGame() {
     text.style.color = "red";
     document.body.style.backgroundColor = "pink";
   }
-  msg("maara", "Arvausten määrä: " + kpl);
+  maara("Arvausten määrä: " + kpl);
   console.log("min:" + lastMin);
   console.log("max: :" + lastMax);
 }
@@ -82,7 +79,7 @@ function resetGame() {
   message = document.getElementById("message");
   message.style.color = "";
 
-  msg("maara", "Arvausten määrä: " + kpl);
-  msg("message", "Arva numero 1-100 väliltä");
+  maara("Arvausten määrä: " + kpl);
+  msg("Arva numero 1-100 väliltä");
   arvoLask();
 }
